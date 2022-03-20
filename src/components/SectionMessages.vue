@@ -1,12 +1,18 @@
 <template>
-  <v-container class="section-grid section-box">
+  <v-container class="section-grid">
     <v-row no-gutters>
       <v-col cols="12">
         <h1 class="yellow--text text--darken-3 text-center pa-0 ma-0">
           <img
-            src="../assets/img/section-messages.png" height="60"
+            src="../assets/img/section-messages.png" height="80"
             alt="Message Cards" />
         </h1>
+        <h2 class="white--text text-center">
+          Message form is still open for submissions!
+          <a href="https://forms.gle/f3YvSgo4azDDgzeCA" target="_blank">
+            https://forms.gle/f3YvSgo4azDDgzeCA
+          </a>
+        </h2>
       </v-col>
     </v-row>
     <v-row no-gutters>
@@ -55,40 +61,31 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  background:#1a1a1a;
+  // background:#505050;
   position:relative;
   padding:10px;
   min-height:100px;
   width:24%;
   margin:10px 0.5%;
-  // border:2px solid #0f0f0f;
+  border-radius:10px;
   background-repeat: repeat-y;
   background-size: contain;
-  &.card-style-1 { background:url('../assets/img/card-01.png'); }
-  &.card-style-2 { background:url('../assets/img/card-02.png'); }
-  &.card-style-3 { background:url('../assets/img/card-03.png'); }
-  &.card-style-4 { background:url('../assets/img/card-04.png'); }
-  &.card-style-5 { background:url('../assets/img/card-05.png'); }
-  &.card-style-6 { background:url('../assets/img/card-06.png'); }
   .card-name {
-    color:#343c75;
+    color:#ffaaaa;
     font-weight:bold;
     text-shadow:
-      0px 0px 3px #fff,
-      0px 0px 3px #fff,
-      1px 1px 2px #fff;
+      0px 0px 3px #000;
   }
   .card-text {
     white-space: pre-line;
     font-weight:bold;
     padding:5px 10px;
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(60, 0, 0, 0.8);
     border-radius:10px;
-    color:#000;
+    color:#fff;
     text-shadow:
-      0px 0px 3px #fff,
-      0px 0px 3px #fff,
-      0px 0px 15px #ffcc00;
+      0px 0px 3px #000,
+      0px 0px 3px #000;
   }
 }
 

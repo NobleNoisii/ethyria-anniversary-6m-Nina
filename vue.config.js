@@ -2,6 +2,7 @@ const path = require('path');
 const { defineConfig } = require('@vue/cli-service');
 
 module.exports = defineConfig({
+  publicPath: '/ethyria-anniversary-6m-Nina',
   outputDir: path.resolve(__dirname, 'docs'),
   transpileDependencies: [
     'vuetify',
@@ -11,25 +12,25 @@ module.exports = defineConfig({
     // HTML Title used for OpenGraph linters (social media links)
     config.plugin('html').tap((args) => {
       // eslint-disable-next-line no-param-reassign
-      args[0].title = 'Millie 6-Months and 200K';
+      args[0].title = 'Nina 6-Months and 300K';
       // eslint-disable-next-line no-param-reassign
       args[0].meta = {
-        description: 'Happy 6-Months Anniversary and Congratulations on 200K Millie!',
-        'og:title': 'Millie 6-Months and 200K',
+        description: 'Happy 6-Months Anniversary and Congratulations on 300K Nina!',
+        'og:title': 'Nina 6-Months and 300K',
         'og:type': 'website',
-        'og:description': 'Happy 6-Months Anniversary and Congratulations on 200K Millie!',
+        'og:description': 'Happy 6-Months Anniversary and Congratulations on 300K Nina!',
         // 'og:image': 'https://birthday.ennaalouette.com/ogimage.png',
         'twitter:card': 'summary_large_image',
-        'twitter:title': 'Millie 6-Months and 200K',
-        'twitter:description': 'Happy 6-Months Anniversary and Congratulations on 200K Millie!',
+        'twitter:title': 'Nina 6-Months and 300K',
+        'twitter:description': 'Happy 6-Months Anniversary and Congratulations on 300K Nina!',
         // 'twitter:image': 'https://birthday.ennaalouette.com/ogimage.png',
       };
       return args;
     });
   },
   pwa: {
-    name: 'Millie 6-Months and 200K',
-    themeColor: '#102471',
+    name: 'Nina 6-Months and 300K',
+    themeColor: '#ff0000',
     workboxOptions: {
       skipWaiting: true,
       exclude: [
@@ -40,9 +41,9 @@ module.exports = defineConfig({
     },
     assetsVersion: '2022_03_18_00_00',
     manifestOptions: {
-      name: 'Millie 6 Months and 200K',
-      short_name: 'Millie 6m and 200K',
-      description: 'Happy 6-Months Anniversary and Congratulations on 200K Millie!',
+      name: 'Nina 6 Months and 300K',
+      short_name: 'Nina 6m and 300K',
+      description: 'Happy 6-Months Anniversary and Congratulations on 300K Nina!',
       display: 'standalone',
       orientation: 'landscape',
       background_color: '#ffffff',
