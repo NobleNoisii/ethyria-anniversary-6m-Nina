@@ -8,7 +8,7 @@
             alt="Rewind" />
         </h1>
         <h2 class="grey--text text-center pa-0 ma-0">
-          Looking back to the fun and amazing moments we had with Millie
+          Looking back to the fun and amazing moments we had with Nina
         </h2>
       </v-col>
     </v-row>
