@@ -1,6 +1,6 @@
 <template>
   <v-container class="section-grid section-box pb-8 mb-16">
-    <v-row no-gutters class="mb-4">
+    <!-- <v-row no-gutters class="mb-4">
       <v-col cols="12">
         <h1 class="yellow--text text--darken-3 text-center pa-0 mx-0 my-0">
           <img
@@ -8,12 +8,12 @@
             alt="Happy 6-Months and Congrats on 300K Nina!" />
         </h1>
       </v-col>
-    </v-row>
-    <v-row no-gutters>
+    </v-row> -->
+    <v-row no-gutters class="pt-8">
       <v-col cols="6"
         class="text-right white--text text-h5 text--darken-1 pt-4 pr-8 pl-4 hero-text">
         <p>
-
+          intro message here
         </p>
       </v-col>
       <v-col cols="6" class="pr-8">

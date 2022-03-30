@@ -7,12 +7,12 @@
             src="../assets/img/section-messages.png" height="80"
             alt="Message Cards" />
         </h1>
-        <h2 class="white--text text-center">
+        <!-- <h2 class="white--text text-center">
           Message form is still open for submissions!
           <a href="https://forms.gle/f3YvSgo4azDDgzeCA" target="_blank">
             https://forms.gle/f3YvSgo4azDDgzeCA
           </a>
-        </h2>
+        </h2> -->
       </v-col>
     </v-row>
     <v-row no-gutters>

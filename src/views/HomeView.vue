@@ -52,10 +52,11 @@ export default {
 }
 .header {
   width:100%;
-  height:300px;
-  // background-image:url('../assets/img/banner.png');
-  background-position:50%;
+  height:900px;
+  background-image:url('../assets/img/banner.png');
+  background-position:top center;
   background-repeat:no-repeat;
+  background-size:900px;
   position:absolute;
 }
 .section {
@@ -63,7 +64,7 @@ export default {
   .section-grid {
     min-height:400px;
     &.section-box {
-      background-color:rgb(40, 40, 40, 0.8);
+      background-color:rgb(0, 0, 0, 0.7);
       border-right:4px solid #ff0000;
       border-bottom:4px solid #ff0000;
     }
