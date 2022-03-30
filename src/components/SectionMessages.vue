@@ -20,7 +20,7 @@
         <div v-masonry="'bdaycards'" transition-duration="0.3s" item-selector=".card" stagger="0s">
           <div
             v-masonry-tile
-            :class="[ 'card', `card-style-${Math.ceil(Math.random() * 6)}`]"
+            :class="[ 'card', `card-style-${Math.ceil(Math.random() * 3)}`]"
             v-for="(item, ix) in cards" :key="`card-${ix}`">
             <div class="card-name text-h6 pr-12 py-2">{{item.name}}</div>
             <div class="card-text text-body-1 pr-4 pb-2">{{item.message}}</div>
@@ -37,7 +37,7 @@ import twemoji from 'twemoji';
 
 export default {
   data: () => ({
-    source: 'https://vtubertools.sfo3.digitaloceanspaces.com/tribute/millie6m.json',
+    source: 'https://vtubertools.sfo3.digitaloceanspaces.com/tribute/nina6m.json',
     cards: [],
   }),
   mounted() {
@@ -61,7 +61,6 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  // background:#505050;
   position:relative;
   padding:10px;
   min-height:100px;
@@ -70,6 +69,7 @@ export default {
   border-radius:10px;
   background-repeat: repeat-y;
   background-size: contain;
+  border:2px solid #ff0000;
   .card-name {
     color:#ffaaaa;
     font-weight:bold;
@@ -87,6 +87,24 @@ export default {
       0px 0px 3px #000,
       0px 0px 3px #000;
   }
+  &.card-style-1 { background:url('../assets/img/card-01.png'); }
+  &.card-style-2 {
+    background:url('../assets/img/card-02.png');
+    .card-name {
+      color:#ff0000;
+      font-weight:bold;
+      text-shadow:
+        0px 0px 3px #fff;
+    }
+    .card-text {
+      background-color:rgba(230, 230, 230, 0.8);
+      color:#000;
+      text-shadow:
+        0px 0px 3px #fff,
+        0px 0px 3px #fff;
+    }
+  }
+  &.card-style-3 { background:url('../assets/img/card-03.png'); }
 }
 
 @media only screen and (max-width: 1800px) {
