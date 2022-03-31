@@ -12,12 +12,26 @@
     <v-row no-gutters class="">
       <v-col>
         <div v-masonry="'gallery'" transition-duration="0.3s" item-selector=".card" stagger="0s">
-          <!-- <div v-masonry-tile class="card">
-            <a href="https://twitter.com/Nashiina2001/status/1489221995380486145" target="_blank">
-              <img src="@/assets/art/Nashiina_01.jpeg" alt="@Nashiina2001" />
-            </a>
-            <div class="artist white--text text-center">Nashiina</div>
-          </div> -->
+          <div v-masonry-tile class="card">
+            <img src="@/assets/art/6months-01-colesparks318.jpg" alt="colesparks318" />
+            <div class="artist white--text text-center">Colesparks-318</div>
+          </div>
+          <div v-masonry-tile class="card">
+            <img src="@/assets/art/6months-02-seviradi.png" alt="seviradi" />
+            <div class="artist white--text text-center">Seviradi</div>
+          </div>
+          <div v-masonry-tile class="card">
+            <img src="@/assets/art/6months-03-voldox.jpg" alt="voldox" />
+            <div class="artist white--text text-center">Voldox</div>
+          </div>
+          <div v-masonry-tile class="card">
+            <img src="@/assets/art/6months-04-voldox.png" alt="voldox" />
+            <div class="artist white--text text-center">Voldox</div>
+          </div>
+          <div v-masonry-tile class="card">
+            <img src="@/assets/art/6months-05-soya.png" alt="soya" />
+            <div class="artist white--text text-center">soya</div>
+          </div>
         </div>
       </v-col>
     </v-row>
