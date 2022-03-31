@@ -52,14 +52,14 @@ export default {
 }
 .header {
   background-image:url('../assets/img/header.png');
-  background-position:center -100px;
+  background-position:center top;
   background-repeat:no-repeat;
   position:absolute;
-  top:0;
+  top:-100px;
   left:0;
   right:0;
-  bottom:0;
-  z-index:2;
+  height:456px;
+  z-index:3;
 }
 .section {
   position:relative;
@@ -78,6 +78,8 @@ export default {
         right:4px;
         bottom:4px;
         border:1px solid #ffdd66;
+        z-index:0;
+        pointer-events: none;
       }
       &:after {
         content:"";
@@ -90,9 +92,13 @@ export default {
         background:
           url('../assets/img/bell-l.png') bottom left no-repeat,
           url('../assets/img/bell-r.png') bottom right no-repeat;
+        z-index:0;
+      }
+      * {
+        position:relative;
+        z-index:2;
       }
     }
   }
-  z-index:1;
 }
 </style>
