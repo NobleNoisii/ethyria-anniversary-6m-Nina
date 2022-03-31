@@ -10,6 +10,9 @@
         <h2 class="grey--text text-center pa-0 ma-0">
           Looking back to the fun and amazing moments we had with Nina
         </h2>
+        <h4 class="grey--text text--darken-2 text-center pa-0 ma-0">
+          Note: Messages beside each clip is randomized every refresh
+        </h4>
       </v-col>
     </v-row>
     <v-row no-gutters class="rewind-item">
@@ -28,21 +31,11 @@
           <div class="rewind-dot"></div>
         </div>
         <div class="rewind-right white--text">
-          <div class="rewind-texts">
-            <!-- <p class="my-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Phasellus magna nisi, varius id risus vel, vulputate tempor mauris.
-              <em>- Zer0Pendragon</em>
-            </p>
-            <p class="my-8">
-              Pellentesque at ligula elementum, rutrum ante nec, sagittis diam.
-              Quisque laoreet ligula lectus, vel malesuada est vehicula at.
-              <em>- Izendale</em>
-            </p>
-            <p class="my-8">
-              In nec scelerisque quam, sed ultricies ligula.
-              <em>- Pinkerton</em>
-            </p> -->
+          <div class="rewind-texts" v-if="cards">
+            <div class="card">
+              <div class="card-name text-h6 pr-12 py-2">{{cards[0].name}}</div>
+              <div class="card-text text-body-1 pr-4 pb-2">{{cards[0].message}}</div>
+            </div>
           </div>
         </div>
       </v-col>
@@ -50,8 +43,11 @@
     <v-row no-gutters class="rewind-item">
       <v-col>
         <div class="rewind-left white--text text-right">
-          <div class="rewind-texts">
-
+          <div class="rewind-texts" v-if="cards">
+            <div class="card">
+              <div class="card-name text-h6 pr-12 py-2">{{cards[1].name}}</div>
+              <div class="card-text text-body-1 pr-4 pb-2">{{cards[1].message}}</div>
+            </div>
           </div>
         </div>
         <div class="rewind-center">
@@ -85,8 +81,11 @@
           <div class="rewind-dot"></div>
         </div>
         <div class="rewind-right white--text">
-          <div class="rewind-texts">
-
+          <div class="rewind-texts" v-if="cards">
+            <div class="card">
+              <div class="card-name text-h6 pr-12 py-2">{{cards[2].name}}</div>
+              <div class="card-text text-body-1 pr-4 pb-2">{{cards[2].message}}</div>
+            </div>
           </div>
         </div>
       </v-col>
@@ -94,8 +93,11 @@
     <v-row no-gutters class="rewind-item">
       <v-col>
         <div class="rewind-left white--text text-right">
-          <div class="rewind-texts">
-
+          <div class="rewind-texts" v-if="cards">
+            <div class="card">
+              <div class="card-name text-h6 pr-12 py-2">{{cards[3].name}}</div>
+              <div class="card-text text-body-1 pr-4 pb-2">{{cards[3].message}}</div>
+            </div>
           </div>
         </div>
         <div class="rewind-center">
@@ -129,8 +131,11 @@
           <div class="rewind-dot"></div>
         </div>
         <div class="rewind-right white--text">
-          <div class="rewind-texts">
-
+          <div class="rewind-texts" v-if="cards">
+            <div class="card">
+              <div class="card-name text-h6 pr-12 py-2">{{cards[4].name}}</div>
+              <div class="card-text text-body-1 pr-4 pb-2">{{cards[4].message}}</div>
+            </div>
           </div>
         </div>
       </v-col>
@@ -138,8 +143,11 @@
     <v-row no-gutters class="rewind-item">
       <v-col>
         <div class="rewind-left white--text text-right">
-          <div class="rewind-texts">
-
+          <div class="rewind-texts" v-if="cards">
+            <div class="card">
+              <div class="card-name text-h6 pr-12 py-2">{{cards[5].name}}</div>
+              <div class="card-text text-body-1 pr-4 pb-2">{{cards[5].message}}</div>
+            </div>
           </div>
         </div>
         <div class="rewind-center">
@@ -164,8 +172,16 @@
 export default {
   props: [],
   data: () => ({
-    //
+    cards: null,
   }),
+  mounted() {
+    this.$root.$on('timelineCards', (cards) => {
+      this.cards = cards;
+      this.$nextTick(() => {
+        this.$forceUpdate();
+      });
+    });
+  },
 };
 </script>
 
