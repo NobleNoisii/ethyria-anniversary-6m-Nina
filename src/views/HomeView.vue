@@ -51,23 +51,48 @@ export default {
   min-height:100vh;
 }
 .header {
-  width:100%;
-  height:900px;
-  background-image:url('../assets/img/banner.png');
-  background-position:top center;
+  background-image:url('../assets/img/header.png');
+  background-position:center -100px;
   background-repeat:no-repeat;
-  background-size:900px;
   position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:2;
 }
 .section {
   position:relative;
   .section-grid {
     min-height:400px;
     &.section-box {
-      background-color:rgb(0, 0, 0, 0.7);
-      border-right:4px solid #ff0000;
-      border-bottom:4px solid #ff0000;
+      position:relative;
+      background:#000;
+      border:3px solid #ff0000;
+      &:before {
+        content:"";
+        display:block;
+        position:absolute;
+        top:4px;
+        left:4px;
+        right:4px;
+        bottom:4px;
+        border:1px solid #ffdd66;
+      }
+      &:after {
+        content:"";
+        display:block;
+        position:absolute;
+        height:60px;
+        left:0px;
+        right:0px;
+        bottom:-40px;
+        background:
+          url('../assets/img/bell-l.png') bottom left no-repeat,
+          url('../assets/img/bell-r.png') bottom right no-repeat;
+      }
     }
   }
+  z-index:1;
 }
 </style>
