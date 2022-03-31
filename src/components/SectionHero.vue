@@ -19,7 +19,7 @@
       <v-col cols="6" class="pr-8">
         <iframe title="feature-video"
           width="100%" height="330"
-          src="https://www.youtube.com/embed/CX1N7gT7_pM"
+          src="https://www.youtube.com/embed/zsT4xCtrvR4"
           frameborder="0"
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
           allowfullscreen>
