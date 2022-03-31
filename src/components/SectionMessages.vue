@@ -68,7 +68,7 @@ export default {
   margin:10px 0.5%;
   border-radius:10px;
   background-repeat: repeat-y;
-  background-size: contain;
+  background-size: cover;
   border:2px solid #ff0000;
   .card-name {
     color:#ffaaaa;
@@ -87,9 +87,9 @@ export default {
       0px 0px 3px #000,
       0px 0px 3px #000;
   }
-  &.card-style-1 { background:url('../assets/img/card-01.png'); }
+  &.card-style-1 { background-image:url('../assets/img/card-01.png'); }
   &.card-style-2 {
-    background:url('../assets/img/card-02.png');
+    background-image:url('../assets/img/card-02.png');
     .card-name {
       color:#ff0000;
       font-weight:bold;
@@ -104,7 +104,7 @@ export default {
         0px 0px 3px #fff;
     }
   }
-  &.card-style-3 { background:url('../assets/img/card-03.png'); }
+  &.card-style-3 { background-image:url('../assets/img/card-03.png'); }
 }
 
 @media only screen and (max-width: 1800px) {
