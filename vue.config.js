@@ -19,11 +19,13 @@ module.exports = defineConfig({
         'og:title': 'Nina 6-Months and 300K',
         'og:type': 'website',
         'og:description': 'Happy 6-Months Anniversary and Congratulations on 300K Nina!',
-        // 'og:image': 'https://birthday.ennaalouette.com/ogimage.png',
+        'og:image': 'https://noblenoisii.github.io/ethyria-anniversary-6m-Nina/ogimage.png',
+        // 'og:image': 'https://6months.ninakosaka.com/ogimage.png',
         'twitter:card': 'summary_large_image',
         'twitter:title': 'Nina 6-Months and 300K',
         'twitter:description': 'Happy 6-Months Anniversary and Congratulations on 300K Nina!',
-        // 'twitter:image': 'https://birthday.ennaalouette.com/ogimage.png',
+        'twitter:image': 'https://noblenoisii.github.io/ethyria-anniversary-6m-Nina/ogimage.png',
+        // 'twitter:image': 'https://6months.ninakosaka.com/ogimage.png',
       };
       return args;
     });
@@ -39,7 +41,7 @@ module.exports = defineConfig({
         /(.*).js.map/g,
       ],
     },
-    assetsVersion: '2022_03_31_00_00',
+    assetsVersion: '2022_04_06_00_00',
     manifestOptions: {
       name: 'Nina 6 Months and 300K',
       short_name: 'Nina 6m and 300K',
