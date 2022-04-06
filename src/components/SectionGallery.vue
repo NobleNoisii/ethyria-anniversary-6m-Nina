@@ -32,6 +32,22 @@
             <img src="@/assets/art/6months-05-soya.png" alt="soya" />
             <div class="artist white--text text-center">soya</div>
           </div>
+          <div v-masonry-tile class="card">
+            <img src="@/assets/art/6months-06-leef.png" alt="leef" />
+            <div class="artist white--text text-center">Leef</div>
+          </div>
+          <div v-masonry-tile class="card">
+            <img src="@/assets/art/6months-07-komet.png" alt="komet" />
+            <div class="artist white--text text-center">Komet</div>
+          </div>
+          <div v-masonry-tile class="card">
+            <img src="@/assets/art/6months-08-soya.png" alt="soya" />
+            <div class="artist white--text text-center">soya</div>
+          </div>
+          <div v-masonry-tile class="card">
+            <img src="@/assets/art/6months-09-komet.png" alt="komet" />
+            <div class="artist white--text text-center">Komet</div>
+          </div>
         </div>
       </v-col>
     </v-row>
