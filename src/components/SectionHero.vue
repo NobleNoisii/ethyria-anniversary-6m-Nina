@@ -13,7 +13,7 @@
       <v-col cols="6"
         class="text-right white--text text-h5 text--darken-1 pt-4 pr-8 pl-4 hero-text">
         <p>
-          intro message here
+          It’s been a crazy 6 months of fun with you, Mum. From your freakout in “The Dark Soul” to your NaniKusa moments in The Minecrafts, every moment has been a blast. We of Ninacord are happy to present some of our favorite clips, artworks, and our well wishes in congratulation for making it to 6 months and reaching 300K subscribers!!! We can't wait to watch your future endeavors, Mom, and we’ll make sure to be with you every step of the way!!!
         </p>
       </v-col>
       <v-col cols="6" class="pr-8">
