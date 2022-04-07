@@ -21,18 +21,29 @@
     </v-row>
     <v-row no-gutters class="px-16">
       <v-col>
-        <v-img src="../assets/mural.jpg" />
+        <v-img
+          contain
+          max-height="94vh"
+          @click="onImgClick"
+          :src="this.image"  />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
+import image from '@/assets/mural.jpg';
+
 export default {
   props: [],
   data: () => ({
-    //
+    image,
   }),
+  methods: {
+    onImgClick() {
+      window.open(image);
+    },
+  },
 };
 </script>
 
