@@ -7,6 +7,7 @@
           Management: Ninacord Staff<br />
           Programming: jetrico<br />
           Header, Background, Card Design: Professor Nobu<br />
+          Hand assets: @dEi_pft<br />
           God Sees All (kazoo cover): Altair<br />
           Drawing Board: jetrico, Professor Nobu, NobleNoisii, KAO,
             AngelCokeLife, Altair, Clover, Komet keiko, Voldox,
